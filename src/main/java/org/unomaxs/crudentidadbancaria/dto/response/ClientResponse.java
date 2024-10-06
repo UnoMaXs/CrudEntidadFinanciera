@@ -1,25 +1,19 @@
-package org.unomaxs.crudentidadbancaria.model;
+package org.unomaxs.crudentidadbancaria.dto.response;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.unomaxs.crudentidadbancaria.enums.IdType;
 
 import java.sql.Date;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class Client {
+public class ClientResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     private IdType idType;
     private Long idNumber;
     private String name;
