@@ -5,6 +5,9 @@ import org.unomaxs.crudentidadbancaria.model.Client;
 import org.unomaxs.crudentidadbancaria.repository.ClientRepository;
 import org.unomaxs.crudentidadbancaria.service.IClientService;
 
+import java.sql.Date;
+import java.time.LocalDateTime;
+
 @Service
 public class ClientServiceImpl implements IClientService {
 
@@ -16,6 +19,7 @@ public class ClientServiceImpl implements IClientService {
 
     @Override
     public void createClient(Client client) {
+        client.setCreationDate(LocalDateTime.now());
         clientRepository.save(client);
     }
 

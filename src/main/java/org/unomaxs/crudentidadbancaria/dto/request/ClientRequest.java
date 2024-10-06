@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.unomaxs.crudentidadbancaria.enums.IdType;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -19,8 +20,8 @@ public class ClientRequest {
     private String name;
     private String surname;
     private String email;
-    private Date dateOfBirth;
-    private Date creationDate;
-    private Date lastModified;
+    private LocalDateTime dateOfBirth;
+    private LocalDateTime creationDate;
+    private LocalDateTime lastModified;
 
 }
