@@ -5,8 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.unomaxs.crudentidadbancaria.enums.IdType;
+import org.unomaxs.crudentidadbancaria.enums.Product;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 @Getter
@@ -23,5 +23,6 @@ public class ClientRequest {
     private LocalDateTime dateOfBirth;
     private LocalDateTime creationDate;
     private LocalDateTime lastModified;
+    private Product product;
 
 }

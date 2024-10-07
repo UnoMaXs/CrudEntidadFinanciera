@@ -15,6 +15,7 @@ public class RequestMapper {
         client.setDateOfBirth(clientRequest.getDateOfBirth());
         client.setCreationDate(clientRequest.getCreationDate());
         client.setLastModified(clientRequest.getLastModified());
+        client.setProduct(clientRequest.getProduct());
         return client;
     }
 
@@ -28,6 +29,7 @@ public class RequestMapper {
         clientRequest.setDateOfBirth(client.getDateOfBirth());
         clientRequest.setCreationDate(client.getCreationDate());
         clientRequest.setLastModified(client.getLastModified());
+        clientRequest.setProduct(client.getProduct());
         return clientRequest;
     };
 

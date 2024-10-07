@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.unomaxs.crudentidadbancaria.enums.IdType;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 @Getter
